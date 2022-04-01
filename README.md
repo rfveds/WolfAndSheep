@@ -45,9 +45,9 @@ python3 app.py
 ```
 
 ## Project Status
-Project is: _in progress_
+Project is: _completed_
 
-## Room for Improvement / To Do
+<!-- ## Room for Improvement / To Do -->
 <!-- Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 Room for improvement:
 - Improvement to be done 1
