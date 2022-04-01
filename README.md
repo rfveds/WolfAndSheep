@@ -44,9 +44,6 @@ List the ready features here:
 python3 app.py
 ```
 
-
-
- -->
 ## Project Status
 Project is: _in progress_
 
