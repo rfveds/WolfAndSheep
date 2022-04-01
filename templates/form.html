@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block form %}
+    <div class="container form">
+        <div class="row">
+            <div class="col mt-5">
+                <form method='get' action="{{ url_for('form') }}">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" value="1" type="radio" name="mode" id="1">
+                            <label class="form-check-label" for="1">
+                                Gra z Wilkiem
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" value="2" type="radio" name="mode" id="2">
+                            <label class="form-check-label" for="2">
+                                Gra z Owcami
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" value="3" type="radio" name="mode" id="3">
+                            <label class="form-check-label" for="3">
+                                Gra online
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" value="4" type="radio" name="mode" id="4">
+                            <label class="form-check-label" for="4">
+                                Gra hotseat
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" value="5" type="radio" name="mode" id="5">
+                            <label class="form-check-label" for="5">
+                                AI vs AI
+                            </label>
+                        </div>
+                        <div class="mt-3">
+                            <input class="btn btn-outline-secondary" type="submit" value="Start"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

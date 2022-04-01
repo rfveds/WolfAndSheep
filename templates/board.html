@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block board %}
+
+    {% if mode == '5' or mode == '3' %}
+        <meta http-equiv="refresh" content="1">
+    {% endif %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <table>
+                    {% for i in range(8) %}
+                        <tr>
+                            {% for j in range(8) %}
+                                {% if i == j or (i % 2  == 0 and j % 2 == 0) or (j % 2 != 0 and i % 2 != 0) %}
+                                    <td class="black">
+                                        {% if board[i][j] != ' ' %}
+                                            <a href="{{ url_for('move_id', id=board[i][j]) }}">
+                                                {% if board[i][j] == '4' %}
+                                                    <span class="wolf">
+                                                {% else %}
+                                                    <span class="sheep">
+                                                {% endif %}
+                                                </span>
+                                            </a>
+                                        {% else %}
+                                            <a href="{{ url_for('move', x=j,y=i) }}">
+                                                <div class="space"></div>
+                                            </a>
+                                        {% endif %}
+                                        {% else %}
+                                    <td>
+                                    {#                        puste td#}
+                                {% endif %}
+                            </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="col-sm-2 align-self-center">
+
+                {% if mode != '5' %}
+                    {% if turn %}
+                        <h2>Tura owiec</h2>
+                    {% else %}
+                        <h2>Tura wilka</h2>
+                    {% endif %}
+                {% endif %}
+
+                <button type="button" class="btn btn-primary mt-5">
+                    <a class="text-white" href="{{ url_for('reset') }}">Nowa Gra</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+

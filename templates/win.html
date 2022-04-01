@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block win %}
+
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <h1>Zwycięzca: {{ winner[0][0] }}</h1>
+    </div>
+
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary ">
+            <a class="text-white" href="{{ url_for('reset') }}">Nowa Gra</a>
+        </button>
+    </div>
+
+{% endblock %}
