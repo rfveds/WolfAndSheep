@@ -6,10 +6,10 @@ WolfAndSheep
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-<!-- * [Features](#features) -->
-<!-- * [Screenshots](#screenshots)
+* [Features](#features)
+* [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage) -->
+* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement / To Do](#room-for-improvement)
 <!-- * [Acknowledgements](#acknowledgements) -->
@@ -30,18 +30,21 @@ List the ready features here:
 - hot-seat - a game of 1-on-1 (or more players) at a single computer
 - multiplayer - a game played by many players on different computers
 
-<!-- ## Screenshots
+## Screenshots
 ![Example screenshot](./img/screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
-<!-- ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+## Setup
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+- install flask sqlite3 and python
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+
+```console
+python3 app.py
+```
+
+
 
  -->
 ## Project Status
